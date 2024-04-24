@@ -6,73 +6,100 @@
     <title>Cordel Moderno</title>
 </head>
 <style>
-
+    @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
     * {
         margin: 0px;
         padding: 0px;
+    }
+
+    :root {
+        --fonte1: 'Verdana', 'Geneva', 'Tahoma', sans-serif;
+        --fonte2: 'Passion One', cursive;
+        --fonte3: 'Sriracha', cursive;
+    }
+
+    html, body {
+        min-height: 100vh;
+        background-color: darkgray;
+        font-family: var(--fonte1);
     }
 
     header {
         background-color: black;
         text-align: center;
         color: white;
-        padding: 30px;
     }
 
-    header h1 {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 3vw;
+    header > h1 {
+        font-family: var(--fonte2);
+        font-variant: small-caps;
+        font-size: 10vw;
+        padding-top: 50px;
+
     }
 
-    header p {
-        padding-top: 10px;
+    header > p {
         text-align: center;
+        padding-bottom: 50px;
     }
 
     header a {
         text-decoration: none;
         color: white;
+        font-weight: bolder;
+    }
+
+    a:hover {
+        text-decoration: underline;
     }
 
     main {
-        
+        color: black;
     }
 
-    section#imagem1 {
-        background-image: url('imagens/background001.jpg');
-        background-repeat: no-repeat;
-        background-position: right center;
-        background-size: cover;
-        background-attachment: fixed;
+    section {
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        line-height: 2em;
+        padding-left: 30px;
+        font-family: var(--fonte3);
+        font-size: 3.5vw;
     }
 
-    section#imagem1 p {
-        background-color: rgba(0, 0, 0, 0.630);
-        width: 350px;
+    section.imagem {
+        background-color: rgb(51,51,51);
         color: white;
-        background-position: left center;
-    }
-
-    section#imagem2 {
-        background-image: url('imagens/background002.jpg');
+        box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
         background-repeat: no-repeat;
         background-position: right center;
         background-size: cover;
         background-attachment: fixed;
     }
 
-    section#imagem2 p {
-        background-color: rgba(0, 0, 0, 0.630);
-        color:white;
-        width: 350px;
+    section.imagem > p {
+        background-color: rgba(0, 0, 0, 0.653);
+        display: inline-block;
+        padding: 5px;
+        color: white;
+        text-shadow: 1px 1px 0px black;
         background-position: left center;
     }
 
-    p {
+    section#img1 {
+        background-image: url('imagens/background001.jpg');
+
+    }
+
+
+    section#img2 {
+        background-image: url('imagens/background002.jpg');
+    }
+
+    section.normal {
         text-align: left;
-        margin-left: 20px;
-        padding: 10px;
-        line-height: 2.5em;
+        background-color: white;
+        color: black;
     }
 
     footer {
@@ -93,7 +120,7 @@
         <p>Por <a href="https://www.recantodasletras.com.br/poesias/3186743" target="_blank" rel="external"><strong>Milton Duarte</strong></a></p>
     </header>
     <main>
-        <section>
+        <section class="normal">
             <p> Estou ficando cansado <br>
                 Da tal tecnologia<br>
                 Só se fala por e-mail <br>
@@ -104,7 +131,7 @@
                 
             </p>
         </section>
-        <section id="imagem1">
+        <section class="imagem" id="img1">
             <p> Não é mais como era antes<br>
                 É tudo abreviado<br>
                 "Você" só tem duas letras<br>
@@ -114,7 +141,7 @@
                 E um coração desenhado.
             </p>
         </section>
-        <section>
+        <section class="normal">
             <p> Arroba agora não pesa<br>
                 É parte de um endereço<br>
                 Ponto final nem se usa<br>
@@ -134,7 +161,7 @@
                 Decifre esse rabisco.
             </p>
         </section>
-        <section id="imagem2">
+        <section class="imagem" id="img2">
             <p> Tenho saudade das cartas<br>
                 Escritas com a própria mão<br>
                 Mandava no mês de Junho<br>
@@ -145,7 +172,7 @@
             
             </p>
         </section>
-        <section>
+        <section class="normal">
             <p> Agora, escrevo e envio<br>
                 Chegando na mesma hora<br>
                 Mas quando vou prosear<br>
