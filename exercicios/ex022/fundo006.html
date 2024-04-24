@@ -3,23 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body {
             height: 100vh;
-            background-color: black;
+            /*background-color: black;
             background-position: center top;
             background-repeat: no-repeat;
             background-image: url('imagens/wallpaper002.jpg');
             background-size: cover;
-            /*contain: a imagem é 100% colocada. Cover: a imagem é 100% colocada contanto que ela caiba, podendo ser cortada sem mostrar o fundo. */
-
+            /*contain: a imagem é 100% colocada. Cover: a imagem é 100% colocada contanto que ela caiba, podendo ser cortada sem mostrar o fundo. 
+    
+            shorthand background: 
+            color > image > position > repeat> [size] > attachment */
+            background-size: cover;
+            background: black url('imagens/wallpaper02.jpg') center center no-repeat fixed;
         }
         main {
             background-color: white;
             padding: 10px;
             margin: auto;
-            width: 400px;
+            max-width: 700px;
             border-radius: 15px;
             border: 1px solid blue;
         }
