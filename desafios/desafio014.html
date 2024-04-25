@@ -13,6 +13,7 @@
             border: 1px solid black;
             border-collapse: collapse;
             padding: 10;
+            width: 500px;
         }
 
         caption {
@@ -39,7 +40,7 @@
             text-align: center;
         }
     
-        tr, td {
+        tr, td, th {
             border: 1px solid black;
             padding: 8px;
         }
@@ -50,55 +51,62 @@
     <table>
         <caption>Tabela de Notas</caption>
         <thead>
-            <th rowspan="2" scope="col">Área</th>
-            <th rowspan="2" scope="col">Disciplinas</th>
-            <th colspan="2" scope="colgroup">Notas</th>
-            <th>Nota 1</th>
-            <th>Nota 2</th>
-            <th rowspan="2" scope="col">Média</th>
+            <tr>
+                <th rowspan="2" scope="col">Área</th>
+                <th rowspan="2" scope="col">Disciplinas</th>
+                <th colspan="2" scope="colgroup">Notas</th>
+                <th rowspan="2" scope="col">Média</th>
+
+            </tr>
+            <tr>
+                <th>Nota 1</th>
+                <th>Notas 2</th>
+            </tr>
         </thead>
-        <tr>
-            <td rowspan="4">Exatas</td>
-            <td>Matemática</td>
-            <td class="num">0.0</td>
-            <td class="num">0.0</td>
-            <td class="num">0.0</td>
-        </tr>
-        <tr>
-            <td>Física</td>
-            <td class="num">0.0</td>
-            <td class="num">0.0</td>
-            <td class="num">0.0</td>
-        </tr>
-        <tr>
-            <td>Química</td>
-            <td class="num">0.0</td>
-            <td class="num">0.0</td>
-            <td class="num">0.0</td>
-        </tr>
-        <tr>
-            <td>Biologia</td>
-            <td class="num">0.0</td>
-            <td class="num">0.0</td>
-            <td class="num">0.0</td>
-        </tr>
-        <tr class="linha">
-            <td colspan="4">Média de exatas</td>
-            <td class="num">0.0</td>
-        </tr>
-        <tr>
-            <td rowspan="2">Humanas</td>
-            <td>História</td>
-            <td class="num">0.0</td>
-            <td class="num">0.0</td>
-            <td class="num">0.0</td>
-        </tr>
-        <tr>
-            <td>Geografia</td>
-            <td class="num">0.0</td>
-            <td class="num">0.0</td>
-            <td class="num">0.0</td>
-        </tr>
+        <tbody>
+            <tr>
+                <td rowspan="4">Exatas</td>
+                <td>Matemática</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+            </tr>
+            <tr class="linha">
+                <td colspan="4">Média de exatas</td>
+                <td class="num">0.0</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Humanas</td>
+                <td>História</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+            </tr>
+        </tbody>
         <tfoot class="rodape">
             <th colspan="4" scope="row">Média de Humanas</th>
             <td class="num">0.0</td>
