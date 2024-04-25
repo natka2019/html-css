@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-brn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario com Checkbox e radio</title>
+</head>
+<body>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <!-- Para que o radio selecione apenas uma bolinha, todas as bolinhas tem que estar com o mesmo NOME-->
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isxmas" value="M"><label for="isxmas">Masculino</label>
+            <input type="radio" name="sexo" id="isxfem" value="F"><label for="isxfem">Feminino</label>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="esbas" id="iesbas"><label for="iesbas">Basquete</label>
+            <input type="checkbox" name="esfut" id="ifut" checked><label for="ifut">Futebol</label>
+            <input type="checkbox" name="ensas" id="inas"><label for="inas">Natação</label>
+            <input type="checkbox" name="esten" id="iten"><label for="iten">Tênis</label>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
